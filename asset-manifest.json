@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/static/css/main.ab492bcd.css",
-    "main.js": "/static/js/main.e25e4f7a.js",
-    "static/js/453.83f8c3fe.chunk.js": "/static/js/453.83f8c3fe.chunk.js",
+    "main.css": "/static/css/main.c1f55d1b.css",
+    "main.js": "/static/js/main.12710eda.js",
+    "static/js/453.efb4636b.chunk.js": "/static/js/453.efb4636b.chunk.js",
     "static/media/3.jpg": "/static/media/3.ef6f97ac1be8885b2d74.jpg",
     "static/media/4.jpg": "/static/media/4.d9e33a6db54f6a50adc5.jpg",
     "static/media/worker.png": "/static/media/worker.ae4a395aa80e6267b925.png",
@@ -16,9 +16,7 @@
     "static/media/why2.jpg": "/static/media/why2.5d6b3f98b40992e7a02d.jpg",
     "static/media/why4.jpg": "/static/media/why4.722caf5b640cf1a64ebd.jpg",
     "static/media/why1.jpg": "/static/media/why1.bf3dfd9521fd32651cc4.jpg",
-    "static/media/2.png": "/static/media/2.709aa26bf89f1b756ee4.png",
     "static/media/footer1.jpg": "/static/media/footer1.4c76d327cc2ba8937c00.jpg",
-    "static/media/1.png": "/static/media/1.3a983f28691c8abf70f3.png",
     "static/media/mani_fitout_3.jpg": "/static/media/mani_fitout_3.4dde8d59a193fdae5921.jpg",
     "static/media/mani_mep_2.jpg": "/static/media/mani_mep_2.459c935feee9b96ed1a4.jpg",
     "static/media/mani_mep_1.jpg": "/static/media/mani_mep_1.16e53b2ca63e6dd9dc1b.jpg",
@@ -26,7 +24,6 @@
     "static/media/mani_hard_2.jpg": "/static/media/mani_hard_2.14323d4962dc134059d8.jpg",
     "static/media/mani_hard_1.jpg": "/static/media/mani_hard_1.946f0960bfde24d90bf1.jpg",
     "static/media/f2.jpg": "/static/media/f2.bb21422413c04d63c96f.jpg",
-    "static/media/dummy_profile.png": "/static/media/dummy_profile.a3e134ebb0a4b91d0c07.png",
     "static/media/why3.jpg": "/static/media/why3.52b5a7d633a946cd776a.jpg",
     "static/media/sub_soft_2.jpg": "/static/media/sub_soft_2.7ff859b50bc04ccf4c36.jpg",
     "static/media/FACILITY_SERVES.jpg": "/static/media/FACILITY_SERVES.05ee9128456542b2f2a5.jpg",
@@ -63,7 +60,7 @@
     "static/media/sub_soft_5.jpg": "/static/media/sub_soft_5.eb17a66bf00025a72494.jpg",
     "static/media/sub_fitout_1.jpg": "/static/media/sub_fitout_1.f5403ef8efaf39974e5d.jpg",
     "static/media/about2.png": "/static/media/about2.0708630478d59ea04403.png",
-    "static/media/3.png": "/static/media/3.dec43f84d3aac0b177d6.png",
+    "static/media/1.png": "/static/media/1.3a983f28691c8abf70f3.png",
     "static/media/dubai-skyline.jpg.png": "/static/media/dubai-skyline.jpg.d1dec5a2705d8b5af49d.png",
     "static/media/hard1.png": "/static/media/hard1.880ad1d57160c4a84fbd.png",
     "static/media/mission.png": "/static/media/mission.4d0c76889182973560a8.png",
@@ -72,20 +69,22 @@
     "static/media/fitout1.png": "/static/media/fitout1.bbd494bac9ce4c5bb743.png",
     "static/media/soft2.png": "/static/media/soft2.7c68b1dcaff9d660450d.png",
     "static/media/vision1.png": "/static/media/vision1.9a69738173fd39f3ec02.png",
-    "static/media/5.png": "/static/media/5.3a983f28691c8abf70f3.png",
     "static/media/mep2.png": "/static/media/mep2.1dbc82a6b1c62dd5e1d9.png",
-    "static/media/6.png": "/static/media/6.68d25f2bbbe5595076ef.png",
     "static/media/hard2.png": "/static/media/hard2.79877466766058962ef6.png",
     "static/media/fitout2.png": "/static/media/fitout2.2f0e08f461003d88a883.png",
+    "static/media/2.png": "/static/media/2.709aa26bf89f1b756ee4.png",
     "static/media/4.png": "/static/media/4.5e3bee41c22bcb7e51f1.png",
+    "static/media/3.png": "/static/media/3.dec43f84d3aac0b177d6.png",
+    "static/media/6.png": "/static/media/6.68d25f2bbbe5595076ef.png",
     "static/media/dummy-icon.png": "/static/media/dummy-icon.bb66b95774d8f30133bc.png",
+    "static/media/5.png": "/static/media/5.3a983f28691c8abf70f3.png",
     "index.html": "/index.html",
-    "main.ab492bcd.css.map": "/static/css/main.ab492bcd.css.map",
-    "main.e25e4f7a.js.map": "/static/js/main.e25e4f7a.js.map",
-    "453.83f8c3fe.chunk.js.map": "/static/js/453.83f8c3fe.chunk.js.map"
+    "main.c1f55d1b.css.map": "/static/css/main.c1f55d1b.css.map",
+    "main.12710eda.js.map": "/static/js/main.12710eda.js.map",
+    "453.efb4636b.chunk.js.map": "/static/js/453.efb4636b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ab492bcd.css",
-    "static/js/main.e25e4f7a.js"
+    "static/css/main.c1f55d1b.css",
+    "static/js/main.12710eda.js"
   ]
 }
