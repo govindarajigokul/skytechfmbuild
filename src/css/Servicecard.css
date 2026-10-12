@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.wwhole{
+  /* background-image: url('../assets/land6.jpg'); 
+  background-size: 100% 100%; 
+  background-position: center;  */
+  background: #006a8a;
+}
+/* General Container Styles */
+.container1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 3% 10%;
+    font-family: "Poppins", sans-serif;
+    height: 100%; /* Set height to auto for responsiveness */
+    padding-bottom: 50px;
+}
+
+/* Service Head Styles */
+.service-head {
+    display: flex;
+    text-align: center;
+    width: 100%;
+    font-size: 36px; /* Increased font size for prominence */
+    justify-content: center;
+    font-family: "Poppins", sans-serif;
+ 
+    font-weight: 700; /* Bolder font weight */
+    color: #ffffff; /* Text color white */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Subtle text shadow */
+   background:transparent;
+    padding: 20px 0; /* Vertical padding */
+  
+}
+.service-title{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+color: white;
+}
+.service-title p{
+color: #ffffff;
+text-align: center;
+width: 50%;
+font-size: 20PX;
+
+}
+/* Card Wrapper for Perspective */
+.card-wrapper {
+    perspective: 1000px; /* Perspective for 3D effect */
+}
+
+/* Flippable Card Styles */
+.flippable-card {
+    width: 100%;
+    height: 300px;
+    position: relative;
+    transition: transform 0.6s;
+    transform-style: preserve-3d; /* Preserve 3D style */
+}
+
+/* On hover, rotate the card to show the back */
+.flippable-card:hover {
+    transform: rotateY(180deg);
+}
+
+/* Inner Card Container */
+.card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 0.6s ease-in-out;
+}
+
+/* Card Front and Back Common Styles */
+.card-front, .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden; /* Hide the back side when facing front */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px black;
+    opacity: 0.9; /* Slightly transparent for premium look */
+}
+
+/* Front Card Styles */
+.card-front {
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
+    text-align: center; /* Centered text */
+}
+.card-front p{
+
+  text-align: center;
+}
+/* Service Image Styles */
+.service-image {
+    width: 100px; /* Adjust size as per your design */
+    height: 100px;
+    margin-bottom: 10px;
+    /* Circular image */
+    object-fit: cover; /* Maintain aspect ratio */
+}
+
+/* Back Card Styles */
+.card-back {
+    background-color: #ffffff; /* Dark blue for back */
+    color: white; /* White text */
+    transform: rotateY(180deg); /* Rotate back to face the opposite */
+    text-align: justify; /* Justified text for description */
+}
+
+/* Back Card Paragraphs */
+.card-back p {
+    color: rgb(0, 0, 0); /* White text */
+    text-align: justify; /* Justified text */
+}
+
+/* Button Styling */
+.card-back button {
+    padding: 12px 30px;
+    background: linear-gradient(135deg, #fc7200 0%, #ff9000 100%);
+    color: white;
+    border: none;
+    border-radius: 50px; /* Rounded corners */
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    transition: all 0.3s ease; /* Smooth transitions */
+    outline: none; /* No outline */
+}
+
+/* Hover Effect for Button */
+.card-back button:hover {
+    background: linear-gradient(135deg, #ff9000 0%, #fc7200 100%);
+    transform: translateY(-5px); /* Lift button slightly on hover */
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3); /* Deepen shadow on hover */
+}
+
+/* Active Button (when clicked) */
+.card-back button:active {
+    transform: translateY(0); /* Bring the button back down */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Restore original shadow */
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 900px) {
+    .container1 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .service-title P{
+        width: 100%;
+        padding: 20px;
+        text-align: justify;
+    }
+}
+
+@media (max-width: 600px) {
+    .container1 {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .service-image {
+        width: 80px; /* Adjust image size for smaller screens */
+        height: 80px;
+    }
+
+    .service-head {
+        font-size: 28px; /* Smaller font size for mobile */
+    }
+}

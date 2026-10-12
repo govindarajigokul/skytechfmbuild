@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.bb{
+display: flex;
+flex-direction: column;
+width: 100%;
+height: 100vh;
+
+justify-content: center;
+padding: 2% 5%;
+font-family: "Poppins", sans-serif;
+/* background: url('../assets/9.jpg') no-repeat center center;
+background-size: 100% 100%; 
+background-position: center; 
+position: relative; */
+background: #006a8a;
+
+}
+.title-container1{
+  display: flex;
+  width: 100%;
+  height: auto;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+.title-container1 .title-under1{
+  display: flex;
+width: 100%;
+height: auto;
+justify-content: center;
+gap: 0px;
+}
+.title-under1 .title-line1{
+  display: flex;
+  flex-direction: column;
+  width: 180px;
+  height: 5px;
+  background:black;
+}
+.title-under1 .title-image1{
+  width: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.title-image1 img{
+  width: 100%;
+  height: auto;
+}
+.title-head1 h1{
+text-align: center;
+color: white;
+text-transform: uppercase;
+}
+.service-grid {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+    padding: 20px;
+  
+  
+  }
+  
+  .service-card {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    background:white;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease;
+
+  }
+  .service-card:hover {
+  transform: scale(1.05); /* Slightly scale up on hover */
+}
+
+  .service-image1 img {
+    width: 150px;
+    height: 150px;
+    background:#ffffff;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border:4px solid #ffffff;
+    border-radius: 50%;
+   
+  }
+
+  .service-image1 img{
+    margin: 2px;
+border-radius: 50%;
+    width:150px;
+    height:150px;
+  
+  }
+  h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+ .service-card p {
+  padding: 5px;
+    text-align: justify;
+    font-size: 14px;
+    color: #000000;
+    margin-bottom: 20px;
+  }
+  .service-card:hover p{
+    color: rgb(0, 0, 0);
+  }
+/*   
+  button {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 500;
+    font-family: "Poppins", sans-serif;
+  }
+  
+
+   */
+   /* From Uiverse.io by Creatlydev */ 
+.button {
+  line-height: 1;
+  text-decoration: none;
+  display: inline-flex;
+  border: none;
+  cursor: pointer;
+  align-items: center;
+  gap: 0.75rem;
+  background-color: var(--clr);
+  color: #fff;
+  border-radius: 10rem;
+  font-weight: 600;
+  padding: 0.75rem 1.5rem;
+  padding-left: 20px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition: background-color 0.3s;
+  margin-bottom: 20px;
+}
+
+.button__icon-wrapper {
+  flex-shrink: 0;
+  width: 25px;
+  height: 25px;
+  position: relative;
+  color: var(--clr);
+  background-color: #fff;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+}
+
+.button:hover {
+  background-color: #000;
+}
+
+.button:hover .button__icon-wrapper {
+  color: #000;
+}
+
+.button__icon-svg--copy {
+  position: absolute;
+  transform: translate(-150%, 150%);
+}
+
+.button:hover .button__icon-svg:first-child {
+  transition: transform 0.3s ease-in-out;
+  transform: translate(150%, -150%);
+}
+
+.button:hover .button__icon-svg--copy {
+  transition: transform 0.3s ease-in-out 0.1s;
+  transform: translate(0);
+}
+.description{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width:100%;
+
+}
+.description p{
+  text-align: center;
+  font-size: 20px;
+ 
+}
+
+  /* Mobile responsiveness */
+  @media (max-width: 848px) {
+    .service-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .bb{
+height: 100%;
+
+    }
+    .bb{
+      padding: 0% 3%;
+    }
+    .title-head1 h1{
+
+      color: white;
+      font-size: 19px;
+      }
+  }
+  @media (max-width: 720px) {
+
+    .title-head1 h1{
+
+      color: white;
+      font-size: 26px;
+      }
+  }
+  @media (max-width: 480px) {
+    .service-grid {
+      grid-template-columns: 1fr;
+    }
+.bb{
+  padding: 0% 3%;
+}
+
+  }
+  @media (max-width: 560px) {
+
+    .title-head1 h1{
+margin-top: 30px;
+      color: white;
+      font-size: 20px;
+      }
+}
+
+@media (max-width: 448px) {
+
+  .title-head1 h1{
+margin-top: 30px;
+    color: white;
+    font-size: 16px;
+    }
+}
+@media (max-width: 314px) {
+
+  .title-head1 h1{
+margin-top: 30px;
+    color: white;
+    font-size: 14px;
+    }
+}

@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* General styles */
+.whole{
+  /* background: url('../assets/land8.jpg') no-repeat center center;
+    background-size: cover; */
+    background: #416ca3;
+}
+.contact-us-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  
+    font-family: "Poppins", sans-serif;
+}
+
+.contact-us-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #fff;
+    text-transform: uppercase;
+}
+.contact-us-container p{
+    color: #fff;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.contact-info-form {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 30px;
+    
+
+/* Contact Info Styles */
+.contact-info {
+    flex: 1;
+    background-color:transparent; /* Slightly transparent background for better visibility */
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid white;
+}
+}
+
+.info-item {
+    display: flex;
+    align-items: start;
+    margin-bottom: 20px;
+}
+
+.info-item i {
+    font-size: 24px;
+    color: #ffffff;
+    margin-right: 10px;
+}
+
+.info-item h4 {
+    margin: 0 0 5px 0;
+    text-align: start;
+    color: #fff;
+    padding-left: 10px;
+}
+
+.info-item p {
+    margin: 0;
+    text-align: justify;
+    color: #fff;
+    padding-left: 10px;
+}
+
+/* Contact Form Styles */
+.contact-form {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    font-family: "Poppins", sans-serif;
+    background:transparent;
+ justify-content: center;
+ align-items: center;
+ width: 100%;
+  
+}
+
+.contact-form input,
+.contact-form textarea {
+    margin-bottom: 15px;
+    padding: 15px;
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    width: 100%;
+    background: transparent;
+    color: #fff;
+    font-size: 16px;
+}
+.contact-form input::placeholder{
+  color: rgb(255, 255, 255);
+}
+.contact-form textarea::placeholder{
+  color: white;
+  font-size: 18px;
+}
+
+.contact-form textarea {
+    resize: vertical;
+    min-height: 150px;
+    font-family: "Poppins", sans-serif;
+}
+
+.contact-form button {
+    padding: 15px;
+    background-color: #d16d0f;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+}
+
+.contact-form button:hover {
+    background-color: #1a73e8  ;
+}
+
+/* Map Section */
+.map-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.get-direction-btn {
+    background-color: #1a73e8;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.get-direction-btn:hover {
+    background-color: #0056c0;
+}
+/* From Uiverse.io by vinodjangid07 */ 
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact-info-form {
+        flex-direction: column;
+    }
+    .contact-us-container {
+        width: 100%;
+    }
+    .contact-info,
+    .contact-form {
+        width: 100%;
+    }
+
+    .map-container iframe {
+        width: 100%;
+    }
+}

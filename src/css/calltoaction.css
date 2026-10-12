@@ -1,0 +1,101 @@
+.calltoaction{
+    margin-bottom: 40px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.calltoaction h1{
+    margin: 20px 0px;
+    text-align: center;
+}
+
+.calltoaction .callbtn{
+    width: 200px;
+    height: 50px;
+    font-size: 18px;
+    border-radius: 10px;
+    background-color: rgb(0, 64, 138);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    margin: 10px 0px;
+    cursor: pointer;
+}
+.calltoaction .callbtn:hover{
+    background-color: rgb(6, 100, 207);
+}
+
+/* Common styles for all devices */
+
+/* Small mobile devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+
+    .calltoaction h1{
+        width: 80%;
+        font-size: 19px;
+        margin: 20px 0px;
+        text-align: center;
+    }
+    
+    .calltoaction .callbtn{
+        width: 160px;
+        height: 40px;
+        font-size: 14px;
+        border-radius: 10px;
+    }
+ 
+    
+  }
+  
+  /* Normal mobile devices (landscape phones, 576px and up) */
+  @media (min-width: 576px) and (max-width: 767.98px) {
+    .calltoaction h1{
+        width: 80%;
+        font-size: 24px;
+        margin: 20px 0px;
+        text-align: center;
+    }
+    
+    .calltoaction .callbtn{
+        width: 160px;
+        height: 40px;
+        font-size: 14px;
+        border-radius: 10px;
+    }
+ 
+    
+  }
+  
+  /* Tablets and iPads (portrait and landscape, 768px and up) */
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    .calltoaction h1{
+        width: 80%;
+        font-size: 26px;
+        margin: 20px 0px;
+        text-align: center;
+    }
+    
+    .calltoaction .callbtn{
+        width: 180px;
+        height: 45px;
+        font-size: 14px;
+        border-radius: 10px;
+    }
+  }
+  
+  /* Tablets and iPads (landscape, larger than 992px) */
+  @media (min-width: 992px) and (max-width: 1199.98px) {
+    /* Add your styles here */
+  }
+  
+  /* Laptops and PCs (larger than 1200px) */
+  @media (min-width: 1200px) and (max-width: 1439.98px) {
+    /* Add your styles here */
+  }
+  
+  /* Large screens (TVs and larger displays, 1440px and up) */
+  @media (min-width: 1440px) {
+    /* Add your styles here */
+  }

@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+.quote-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 200px 0;
+    width: 100%; /* Full width of the viewport */
+    background: url('../assets/f2.jpg') no-repeat center center; /* Replace with your image path */
+    background-size: cover; /* Ensure the image covers the entire section */
+    border-radius: 0; /* No border radius for full-width sections */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15); /* Soft shadow for premium depth */
+    font-family: "Poppins", sans-serif;
+    transition: all 0.4s ease-in-out;
+    margin: 0; /* Remove margin */
+    position: relative; /* For pseudo-elements */
+    animation: fadeIn 1s ease-in-out;
+    height: 100vh;
+    padding-top: 40px;
+ 
+}
+
+.quote-section .content-wrapper {
+    width: 100%;
+    max-width: 1200px; /* Constrain content width */
+    padding: 0 20px; /* Add padding for small screens */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 40px;
+}
+
+/* Text Styling */
+.sub h4 {
+    font-size: 2rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 20px;
+    opacity: 0;
+    animation: fadeInUp 1s ease-in-out 0.5s forwards;
+}
+
+.para p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #ffffff;
+    text-align: center;
+    max-width: 900px;
+    margin-bottom: 30px;
+    opacity: 0;
+    animation: fadeInUp 1s ease-in-out 0.7s forwards;
+}
+
+/* Premium Button Design */
+.quote-button {
+    background: linear-gradient(135deg, #ff7e5f, #feb47b);
+    padding: 15px 40px;
+    color: rgb(255, 255, 255);
+    font-size: 1.2rem;
+    font-weight: 600;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+    box-shadow: 0 8px 20px rgba(255, 126, 95, 0.3);
+    transform: translateY(0);
+}
+
+.quote-button:hover {
+    background: linear-gradient(135deg, #5f2c82, #49a09d); /* Button hover gradient */
+    box-shadow: 0 12px 30px rgba(79, 209, 197, 0.5);
+    transform: translateY(-5px); /* Subtle lift on hover */
+}
+
+/* Glassmorphism Border & Background */
+.quote-section::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0));
+    pointer-events: none;
+}
+
+/* Animation for fade in effect */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .quote-section {
+        padding: 40px 0;
+    }
+
+    .sub h4 {
+        font-size: 1.6rem;
+    }
+
+    .para p {
+        font-size: 1rem;
+    }
+
+    .quote-button {
+        font-size: 1.1rem;
+        padding: 12px 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .sub h4 {
+        font-size: 1.4rem;
+    }
+
+    .para p {
+        font-size: 0.9rem;
+    }
+
+    .quote-button {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+}

@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+.bo{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+    background-color:transparent;
+    color: #ffffff;
+    font-family: "Poppins", sans-serif;
+    overflow: hidden;
+   
+    padding: 20px;
+    background-size: cover;
+    /* Ensures the background covers the entire body */
+    background-position: center;
+    /* Centers the image */
+    background-repeat: no-repeat;
+    /* Prevents the image from repeating */
+    margin: 0;
+width: 100%;
+    height: auto;
+   
+   
+
+}
+.footer {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    background-color:transparent;
+    color: #ffffff;
+    font-family: "Poppins", sans-serif;
+    overflow: hidden;
+    gap: 70px;
+    padding: 20px;
+    background-size: cover;
+    /* Ensures the background covers the entire body */
+    background-position: center;
+    /* Centers the image */
+    background-repeat: no-repeat;
+    /* Prevents the image from repeating */
+    margin: 0;
+width: 100%;
+    height: auto;
+  
+    z-index: 1;
+
+}
+
+.bo::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-image: url('../assets/footer1.jpg');
+    background-position: center;
+    background-size: cover;
+    
+    background-repeat: no-repeat;
+}
+
+.footer-section {
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    text-align: start;
+    /* Aligns text to the start (left) */
+    font-family: "Poppins", sans-serif;
+margin-top: 50px;
+justify-content: flex-start;
+}
+
+.footer-section ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    list-style-type: none;
+    padding-top: 20px;
+}
+.footer-section ul li a {
+    text-decoration: none;
+
+}
+.footer-section ul li{
+    padding-bottom: 15px;
+}
+.footer-section ul li a {
+    margin-bottom: 10px;
+    color: #ffffff85;
+}
+
+.footer-section p {
+    color: #ffffff85;
+}
+
+.footer-section p:hover {
+    color: #fff;
+}
+
+.footer-section ul li a:hover {
+    color: #fff;
+}
+
+.footer-section h3 {
+    margin-bottom: 15px;
+    color: white;
+    text-align: start;
+}
+
+.social-media .social-icons i {
+    margin-right: 10px;
+    font-size: 20px;
+}
+.social-media .social-icons{
+
+    margin-top: 15px;
+}
+
+.copy-1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+
+}
+.copy-1 a{
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+}
+.copy-1 a:hover{
+    color: aqua;
+}
+.social-icons i {
+    color: #ffffff85;
+}
+
+.social-icons :hover {
+    color: #fff;
+}
+
+.social-icons i:nth-child(1):hover {
+    color: #E1306C; /* Instagram color */
+  }
+  .social-icons i:nth-child(2):hover {
+    color: #FF0000; /* YouTube color */
+  }
+  
+  .social-icons i:nth-child(3):hover {
+    color: #0077B5; /* LinkedIn color */
+  }
+  
+  .social-icons i:nth-child(4):hover {
+    color: #25D366; /* WhatsApp color */
+  }
+  
+  .social-icons i:nth-child(5):hover {
+    color: #3b5998; /* Facebook color */
+  }
+@media (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+        text-align: start;
+        /* Ensure left alignment on mobile */
+
+        justify-content: start;
+        gap: 10px;
+    }
+    .footer-section ul {
+padding-top: 0;
+    }
+    .footer-section {
+        margin: 20px 0px 0px 10px;
+        text-align: start;
+        /* Ensure left alignment in mobile view */
+    }
+    .social-icons i {
+        color: #fff;
+    }
+    .footer-section p {
+        color: #ffffff;
+    }
+    .footer-section ul li a {
+        margin-bottom: 10px;
+        color: #ffffff;
+    
+    }
+
+}

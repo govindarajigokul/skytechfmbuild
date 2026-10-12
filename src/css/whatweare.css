@@ -1,0 +1,533 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.WhatWeare-container{
+    padding: 10px 0px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex-direction: column;
+}
+.WhatWeare-container h1{
+font-size: 2.5em; 
+}
+.WhatWeare-container .head-under-line{
+    display: flex;
+} 
+.WhatWeare-container .line{
+    width: 85px;
+    height: 2.5px;
+    background: #231f20;
+    border-radius:50px;
+}
+.WhatWeare-container .WhatWeare-head-img{
+    width: 80px;
+}
+.WhatWeare-container .WhatWeare-section{
+    margin: 10px 0px;
+    width: 60%;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.WhatWeare-container .WhatWeare-section .section{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content:center;
+    gap: 40px;
+}
+.WhatWeare-container .WhatWeare-section .section .img{
+    height: 300px;
+    width: 500px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.WhatWeare-container .WhatWeare-section .section .img img{
+    height:100%;
+}
+
+.WhatWeare-container .WhatWeare-section .section .right-section{
+    display: flex;
+    width: 50%;
+    height: auto;
+    align-items: center;
+    justify-content:flex-end;
+}
+.WhatWeare-container .WhatWeare-section .section .left-section{
+    display: flex;
+    width: 50%;
+    height: auto;
+    align-items: center;
+    justify-content: flex-start;
+}
+.WhatWeare-container .WhatWeare-section .section .left-section p,
+.WhatWeare-container .WhatWeare-section .section .right-section p{
+ line-height: 25px; 
+ font-size: 16px; 
+}
+.Our-commitment{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex-direction: column;
+}
+.Our-commitment h1{
+    position: relative;
+    text-align: center;
+    font-size: 2.5em;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.Our-commitment h1::after{
+    content: '';
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    z-index: -1;
+}
+.Our-commitment .sections{
+    margin: 40px 0px;
+    gap: 50px;
+    width:60%;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+.Our-commitment .commitment-img{
+    width:50%;
+}
+.Our-commitment .commitment-img .img{
+    width:500px;
+    height: 280px;
+    overflow: hidden;
+}
+.Our-commitment .commitment-img .img img{
+    width: 100%;
+}
+
+.Our-commitment .commitment-content{
+    width:50%;
+   
+}
+.Our-commitment .commitment-content p{
+    font-size: 16px;
+    line-height: 25px;
+}
+
+/* Common styles for all devices */
+
+/* Small mobile devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+
+    .WhatWeare-container h1{
+    padding: 0px 0px;
+    font-size: 1.6em; 
+    }
+    .WhatWeare-container .line{
+        width: 50px;
+        height: 2.5px;
+    }
+    .WhatWeare-container .WhatWeare-head-img{
+        width: 60px;
+    }
+    .WhatWeare-container .WhatWeare-section{
+        margin: 10px 0px;
+        width: 85%;
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .WhatWeare-container .WhatWeare-section .section{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        gap: 40px;
+    }
+    .WhatWeare-container .WhatWeare-section .section:nth-child(2){
+        flex-direction: column-reverse;
+    }
+    .WhatWeare-container .WhatWeare-section .section .img{
+        height: 200px;
+        width: 300px;
+    }
+    .WhatWeare-container .WhatWeare-section .section .img img{
+        height:100%;
+    }
+    
+    .WhatWeare-container .WhatWeare-section .section .right-section{
+        display: flex;
+        width: 100%;
+        justify-content:flex-start;
+    }
+    .WhatWeare-container .WhatWeare-section .section .left-section{
+        display: flex;
+        justify-content:flex-end;
+        width: 100%;
+    }
+    .WhatWeare-container .WhatWeare-section .section .left-section p,
+    .WhatWeare-container .WhatWeare-section .section .right-section p{
+     line-height: 25px; 
+     font-size: 16px; 
+    }
+
+    .Our-commitment{
+        
+        width: 100%;
+    }
+    .Our-commitment h1{
+        text-align: center;
+        font-size: 1.5em;
+    }
+    .Our-commitment .sections{
+        flex-direction: column;
+        margin: 20px 0px;
+        gap: 10px;
+        width:80%;
+        display: flex;
+        align-items: center;
+        justify-content:center;
+    }
+    .Our-commitment .commitment-img{
+        width:100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .Our-commitment .commitment-img .img{
+        width:300px;
+        height:auto;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .Our-commitment .commitment-img .img img{
+        width: 100%;
+    }
+    
+    .Our-commitment .commitment-content{
+        width:100%;
+       
+    }
+    .Our-commitment .commitment-content p{
+        font-size: 16px;
+        line-height: 25px;
+    }
+    
+    
+  }
+  
+  /* Normal mobile devices (landscape phones, 576px and up) */
+  @media (min-width: 576px) and (max-width: 767.98px) {
+    .WhatWeare-container .line{
+        width: 50px;
+        height: 2.5px;
+    }
+    .WhatWeare-container .WhatWeare-head-img{
+        width: 60px;
+    }
+    
+    .WhatWeare-container h1{
+        padding: 20px 0px;
+        font-size: 1.6em; 
+        }
+        .WhatWeare-container .WhatWeare-section{
+            margin: 10px 0px;
+            width: 76%;
+            flex-direction: column;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .WhatWeare-container .WhatWeare-section .section{
+            display: flex;
+            width: 100%;
+            flex-direction: column;
+            gap: 40px;
+        }
+        .WhatWeare-container .WhatWeare-section .section:nth-child(2){
+            flex-direction: column-reverse;
+        }
+        .WhatWeare-container .WhatWeare-section .section .img{
+            height: 200px;
+            width: 300px;
+        }
+        .WhatWeare-container .WhatWeare-section .section .img img{
+            height:100%;
+        }
+        
+        .WhatWeare-container .WhatWeare-section .section .right-section{
+            display: flex;
+            width: 100%;
+            justify-content:center;
+        }
+        .WhatWeare-container .WhatWeare-section .section .left-section{
+            display: flex;
+            width: 100%;
+            justify-content:center;
+        }
+        .WhatWeare-container .WhatWeare-section .section .left-section p,
+        .WhatWeare-container .WhatWeare-section .section .right-section p{
+         line-height: 25px; 
+         font-size: 16px; 
+        }
+
+        .Our-commitment{
+            width: 100%;
+        }
+        .Our-commitment h1{
+            text-align: center;
+            font-size: 1.5em;
+        }
+        .Our-commitment .sections{
+            flex-direction: column;
+            margin: 20px 0px;
+            gap: 10px;
+            width:80%;
+            display: flex;
+            align-items: center;
+            justify-content:center;
+        }
+        .Our-commitment .commitment-img{
+            width:100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .Our-commitment .commitment-img .img{
+            width:400px;
+            height:auto;
+            overflow: hidden;
+        }
+        .Our-commitment .commitment-img .img img{
+            width: 100%;
+        }
+        
+        .Our-commitment .commitment-content{
+            width:100%;
+           
+        }
+        .Our-commitment .commitment-content p{
+            font-size: 16px;
+            line-height: 25px;
+        }
+        
+  }
+  
+  /* Tablets and iPads (portrait and landscape, 768px and up) */
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    .WhatWeare-container .line{
+        width: 50px;
+        height: 2.5px;
+    }
+    .WhatWeare-container .WhatWeare-head-img{
+        width: 60px;
+    }
+    .WhatWeare-container h1{
+        padding: 0px 0px;
+        font-size: 1.6em; 
+        }
+        .WhatWeare-container .WhatWeare-section{
+            margin: 10px 0px;
+            width: 85%;
+            flex-direction: column;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .WhatWeare-container .WhatWeare-section .section{
+            display: flex;
+            width: 100%;
+            flex-direction: row;
+            gap: 40px;
+        }
+        .WhatWeare-container .WhatWeare-section .section:nth-child(2){
+            flex-direction: row;
+        }
+        .WhatWeare-container .WhatWeare-section .section .img{
+            height: 200px;
+            width: 300px;
+        }
+        .WhatWeare-container .WhatWeare-section .section .img img{
+            height:100%;
+        }
+        
+        .WhatWeare-container .WhatWeare-section .section .right-section{
+            display: flex;
+            width: 100%;
+            justify-content:center;
+        }
+        .WhatWeare-container .WhatWeare-section .section .left-section{
+            display: flex;
+            width: 100%;
+            justify-content:center;
+        }
+        .WhatWeare-container .WhatWeare-section .section .left-section p,
+        .WhatWeare-container .WhatWeare-section .section .right-section p{
+         line-height: 25px; 
+         font-size: 16px; 
+        }
+        .Our-commitment{
+            width: 100%;
+        }
+        .Our-commitment h1{
+            text-align: center;
+            font-size: 1.5em;
+        }
+        .Our-commitment .sections{
+            flex-direction: row;
+            margin: 20px 0px;
+            gap: 50px;
+            width:80%;
+            display: flex;
+            align-items: center;
+            justify-content:center;
+        }
+        .Our-commitment .commitment-img{
+            width:100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .Our-commitment .commitment-img .img{
+            width:300px;
+            height:auto;
+            overflow: hidden;
+        }
+        .Our-commitment .commitment-img .img img{
+            width: 100%;
+        }
+        
+        .Our-commitment .commitment-content{
+            width:100%;
+           
+        }
+        .Our-commitment .commitment-content p{
+            font-size: 16px;
+            line-height: 25px;
+        }
+        
+  }
+  
+  /* Tablets and iPads (landscape, larger than 992px) */
+  @media (min-width: 992px) and (max-width: 1199.98px) {
+    .WhatWeare-container h1{
+        padding: 0px 0px;
+        font-size: 1em; 
+        }
+    .WhatWeare-container .line{
+        width: 50px;
+        height: 2.5px;
+    }
+    .WhatWeare-container .WhatWeare-head-img{
+        width: 60px;
+    }
+    .Our-commitment{
+        width: 100%;
+    }
+    .Our-commitment h1{
+        text-align: center;
+        font-size: 1.5em;
+    }
+    .Our-commitment .sections{
+        flex-direction: row;
+        margin: 20px 0px;
+        gap: 50px;
+        width:80%;
+        display: flex;
+        align-items: center;
+        justify-content:center;
+    }
+    .Our-commitment .commitment-img{
+        width:100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .Our-commitment .commitment-img .img{
+        width:350px;
+        height:auto;
+        overflow: hidden;
+    }
+    .Our-commitment .commitment-img .img img{
+        width: 100%;
+    }
+    
+    .Our-commitment .commitment-content{
+        width:100%;
+       
+    }
+    .Our-commitment .commitment-content p{
+        font-size: 16px;
+        line-height: 25px;
+    }
+  }
+  
+  /* Laptops and PCs (larger than 1200px) */
+  @media (min-width: 1200px) and (max-width: 1439.98px) {
+    .WhatWeare-container h1{
+        padding: 0px 0px;
+        font-size: 2em; 
+        }
+    .WhatWeare-container .line{
+        width: 70px;
+        height: 2.5px;
+    }
+    .WhatWeare-container .WhatWeare-head-img{
+        width: 60px;
+    }
+    .Our-commitment{
+        width: 100%;
+    }
+    .Our-commitment h1{
+        text-align: center;
+        font-size: 1.5em;
+    }
+    .Our-commitment .sections{
+        flex-direction: row;
+        margin: 20px 0px;
+        gap: 50px;
+        width:80%;
+        display: flex;
+        align-items: center;
+        justify-content:center;
+    }
+    .Our-commitment .commitment-img{
+        width:100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .Our-commitment .commitment-img .img{
+        width:400px;
+        height:auto;
+        overflow: hidden;
+    }
+    .Our-commitment .commitment-img .img img{
+        width: 100%;
+    }
+    
+    .Our-commitment .commitment-content{
+        width:100%;
+       
+    }
+    .Our-commitment .commitment-content p{
+        font-size: 16px;
+        line-height: 25px;
+    }
+  }
+  
+  /* Large screens (TVs and larger displays, 1440px and up) */
+  @media (min-width: 1440px) {
+    /* Add your styles here */
+  }
